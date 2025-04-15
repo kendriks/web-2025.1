@@ -1,0 +1,47 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color:aliceblue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: larger;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #ddd;
+}
