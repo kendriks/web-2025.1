@@ -1,0 +1,154 @@
+:root {
+    --preto: #111111;
+    --branco: #FFFFFF;
+    --azul-escuro: #141E37;
+    --azul-claro: #2DC5FF;
+    --cinza-claro: #BCBCBC;
+    --cinza-medio: #292929;
+    --cinza-escuro: #111111;
+    --rosa: #E073B5;
+}
+
+* {
+    box-sizing: border-box;
+    /* padding: 0;
+    margin: 0; */
+  }
+  
+  /*estilo do corpo*/
+  body {
+    font-family: Arial;
+    margin: 0;
+    background-color: var(--azul-escuro);
+  }
+  
+  /*estilo do header*/
+  .header {
+    height: 50vh;
+  }
+
+  .header img {
+    width: 100%;
+    /* text-align: center;
+    background: #D5F55E;
+    color: white; */
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    display: flex;
+    top: 0;
+    color: var(--branco)
+    position: sticky;
+    z-index: 1000;
+  }
+  
+  /*estilo do navigation bar*/
+  .navbar a {
+    background-color: var(--azul-escuro);
+    /* color: var(--cinza-escuro); */
+    margin: 9px;
+    padding: 2px 2px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 80px;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: var(--azul-claro);
+    color: black;
+  }
+  
+  .navbar img {
+    border-radius: 40px;
+  }
+
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .img__cancao-do-oceano {
+    width: 100%;
+    padding: 20px;
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/048aa60f00788a93b8246bb9c43005cc408ab50f-1280x720.jpg?auto=format&fit=fill&q=80&w=1280);
+    background-size: cover;
+}
+  
+.img__kda-all-out {
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/e4e6e6d969f18df9c1b20639d8505ae0e2ddae13-1280x720.jpg?auto=format&fit=fill&q=80&w=1280);
+    background-size: cover;
+}
+
+.img__guardia-estelar {
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/10f7a3e42991ded9859ebe526f7b96fc51895cb3-1280x720.jpg?auto=format&fit=fill&q=80&w=1280);
+    background-size: cover;
+}
+
+.img__criadora-mitica {
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/364582af1ce616708d664c06ae14c1fe524515be-1280x720.jpg?auto=format&fit=fill&q=80&w=1280);
+    background-size: cover;
+}
+
+.img__rosa-de-cristal {
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/1363da3b54dd6106a8e4e318a1203e1d18070c31-1280x720.jpg?auto=format&fit=fill&q=80&w=1280);
+    background-size: cover;
+}
+
+.img__festa-do-jardim {
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8f6d1182d15cfa8c8f39b3f43a6026afbf21b942-1280x720.jpg?auto=format&fit=fill&q=80&w=1280);
+    background-size: cover;
+}
+
+.img__lol {
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/aeddf86348891bd4bc12509db175d0cccb8b8c02-837x469.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img__wild-rift {
+    background-image: url(https://seeklogo.com/images/L/league-of-legends-wild-rift-logo-A9F3D92962-seeklogo.com.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--branco);
+}
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
